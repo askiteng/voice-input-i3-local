@@ -16,8 +16,8 @@ MODEL_NAME = "iic/SenseVoiceSmall"
 DEVICE = "cpu"
 AUDIO_PATH = "/tmp/voice_input.wav"
 SOCKET_PATH = "/tmp/voice_input.sock"
-CACHE_DIR = "/home/askiteng/voice_input_tool/models_funasr"
-LOG_FILE = "/home/askiteng/.voice_daemon.log"
+CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "models_funasr")
+LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".voice_daemon.log")
 
 def log(msg):
     with open(LOG_FILE, "a") as f:

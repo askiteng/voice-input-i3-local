@@ -15,8 +15,8 @@ os.environ["MODELSCOPE_LOG_LEVEL"] = "40"
 MODEL_NAME = "iic/SenseVoiceSmall"
 DEVICE = "cpu"
 AUDIO_PATH = "/tmp/voice_input.wav"
-CACHE_DIR = "/home/askiteng/voice_input_tool/models_funasr"
-LOG_FILE = "/home/askiteng/.voice_input.log"
+CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "models_funasr")
+LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".voice_input.log")
 
 def record_audio():
     """使用 ffmpeg 調用 ALSA 硬體錄音"""

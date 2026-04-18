@@ -14,7 +14,7 @@ MODEL_NAME = "iic/SenseVoiceSmall"
 DEVICE = "cpu"
 AUDIO_PATH = "/tmp/voice_input.wav"
 SOCKET_PATH = "/tmp/voice_input.sock"
-CACHE_DIR = "/home/askiteng/voice_input_tool/models_funasr"
+CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "models_funasr")
 NOTIFY_ID = "voice-status"
 
 def notify(msg, icon="emblem-ok-symbolic", timeout=1500):

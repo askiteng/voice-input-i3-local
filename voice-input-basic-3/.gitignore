@@ -1,9 +1,6 @@
 venv/
 models/
-models_funasr/
 __pycache__/
 *.pyc
 .DS_Store
 *.wav
-nohup.log
-nohup.out

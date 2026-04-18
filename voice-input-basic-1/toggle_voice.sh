@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 工具路徑
-BASE_DIR="/home/askiteng/voice_input_tool"
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PYTHON_BIN="$BASE_DIR/venv/bin/python"
 DAEMON_PATH="$BASE_DIR/voice_daemon.py"
 RECORDER_PATH="$BASE_DIR/voice_recorder.py"
